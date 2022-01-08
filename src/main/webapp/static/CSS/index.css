@@ -1,0 +1,622 @@
+body{
+    margin:0px;
+}
+
+/* 导航栏 */
+#NavB{
+    position: fixed;
+    background-color: white;
+    /* top: 0px; */
+    width: 200%;
+    height: 70px;
+    z-index: 200;
+    top: -70px;
+    /* animation: myfirst 0.5s ease 2s 1 normal; */
+    transform: top;
+    transition-duration: 0.5s;    
+    box-shadow: 2px 2px 2px #C0C0C0;
+}
+/*头像*/
+#head_protarit{
+
+    margin-top: 10px;
+    margin-left: 300px;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    border-radius:200px;
+    
+}
+
+/*用户名*/
+#herd_username{
+    position: absolute;
+    bottom: 25%;
+    left: 12%;
+    font-size: 20px;
+}
+/*注销*/
+#cancel{
+    position: absolute;
+    bottom: 25%;
+    left: 14.2%;
+    font-size: 20px;
+}
+#opNa{
+    position: absolute;
+    /* top: 0px; */
+    width: 100%;
+    height: 70px;
+    z-index: 2;
+    top: 0px;
+    /* animation: myfirst 0.5s ease 2s 1 normal; */
+    transform: top;
+    transition-duration: 0.5s;    
+}       
+#zero{
+    position: absolute  ;
+    height: 45%;
+    z-index: 2;
+    top: 25%;
+    left: 50px;
+}
+#op{
+    position: absolute;
+    width: 2%;
+    top: 32%;
+    left:15%;
+    cursor:pointer;
+}
+/* 导航列表 */
+div div ul{
+    position: absolute;
+    left: 550px;
+    top:-16px;
+    font-size: 100%;
+    list-style:none;
+    color: grey;
+    padding: 0 0 0 0;
+}
+div div ul li{
+    position: relative;
+    margin: 0 0px;
+    float: left;
+}
+div div ul li a{
+    position: relative;
+    text-decoration: none;
+    color: #595959;
+    background-color: white;
+    display: block;
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    line-height:400%;
+    transition-duration: 0.5s;
+    transform: background-color;
+    transform: color;
+}
+div div ul li a:hover{
+    background-color: #11643F;
+    color: white;
+}
+
+#down_span{
+    position: absolute;
+    top: 70px;
+    left: 550px;
+    width: 150px;
+    height: 0px;
+    text-align: center;
+    background-color: white;
+    transform: height;
+    transition-duration: 0.5s;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px #C0C0C0;
+    cursor: pointer;
+}
+
+#down_span span{
+    /* text-align: center; */
+    color: #595959;
+    line-height: 70px;
+}
+
+
+/* 背景图 */
+#bgimg{
+    background-size: contain;
+    position: absolute;
+    overflow: hidden;
+    z-index: -100;
+    vertical-align: middle;
+    width: 100%;
+    height: 125%;
+}
+
+
+/* 标题 */
+#title{
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    left: 24%;
+}
+
+/* 图片蒙版 */
+.shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: white;
+    background: rgb(255, 255, 255,0.5);
+    transform: height 1s;
+    top: 100%;
+    transition-duration: 1.5s;
+    transform: top;
+    text-align: center;  
+    display: table-cell;
+    vertical-align: middle;
+}
+.shadowP{
+    top: 45%;
+    display: block;
+    position: relative;
+    /* line-height: 2150%; */
+    font-size: 120%;
+    color: black    ;
+    /* border: 1px solid black; */
+}
+
+/* 第一图 */
+#firBg{
+    position: absolute;
+    display: block;
+    top: 150%;
+    left: 40%;
+    background-color : #11643F;  
+    width: 55%;
+    height: 70%;
+}  
+#firImgDiv{
+    position: absolute;
+    top: 155%;
+    left: 43.5%;
+    width: 55%;
+    height: 70%;
+    /* border: #000 solid 1px;   */
+    margin: 50px auto;  
+    overflow: hidden;  
+}
+#firImg{
+    position: absolute;
+    cursor: pointer;  
+    transition: all 0.6s;  
+    width: 100%;
+    z-index: 100;
+}
+/* #firImg:hover{
+    transform: scale(1.2);  
+} */
+#firShadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    background-color: white;
+    background: rgb(255, 255, 255,0.5);
+    transform: height 1s;
+    top: 100%;
+    transition-duration: 1.5s;
+    transform: top;
+    text-align: center;  
+    display: table-cell;
+    vertical-align: middle;
+}
+#shadowP1{
+    top: 45%;
+    display: block;
+    position: relative;
+    font-size: 22px;
+    color: black    ;
+    /* border: 1px solid black; */
+}
+
+#shuwu{
+    position: absolute;
+    top: 160%;
+    left: 14%;
+    width: 6%;
+    /* border: #000 solid 1px;    */
+}
+
+#firZero{
+    position: absolute;
+    top: 175%;
+    left: 6.5%;
+    width: 22%;
+}
+
+#firTxt{
+    position: absolute;
+    top: 192%;
+    left: 10.2%;
+    /* border: #000 solid 1px; */
+}
+
+#firLine{
+    position: absolute;
+    top: 222%;
+    right: 50%;
+    width: 35%;
+    height: 1px;
+    background-color: #595959;
+    z-index: 1;
+
+    /* border: #000 solid 1px; */
+}
+
+#firBox{
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: 7.5%;
+    border: 1px solid #595959;
+    top: 218%;
+    right: 83%;
+    z-index: 102;
+}
+
+/* #logIn{
+    top: 10%;
+    width: 100%;
+
+} */
+
+#firMore{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color:#11643F;
+    transition-duration: 1.5s;
+    transform: width;
+    /* border: 1px solid #595959; */
+    z-index: 101;
+    text-align: center;  
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* @media screen and (min-width: 100px){
+    .but{
+        font-size:450px; 
+    }
+    
+} */
+.but{
+    position: relative;
+    font-size: 220%;
+    z-index: 999;
+    color: #11643F;
+    transition-duration: 1s;
+    transform: color;
+    display: block;
+    text-align: center;
+    cursor:pointer;
+}
+
+/* 第二图 */
+/* 文字 */
+.secTxt{
+    color:grey;
+    font-size: 21px;
+}
+#secp1{
+    position: absolute;
+    top: 260%;
+    right: 14%;
+}
+#secp2{
+    position: absolute;
+    top: 268%;
+    right: 10.5%;
+}
+#secp3{
+    position: absolute;
+    top: 276%;
+    right: 5%;
+}
+#secp4{
+    position: absolute;
+    top: 284%;
+    right: 5%;
+}
+
+/* 第二图 */
+#secImgDiv{
+    position: absolute;
+    top: 255%;
+    right: 43.5%;
+    width: 55%;
+    height: 70%;
+    /* border: #000 solid 1px;   */
+    margin: 50px auto;  
+    overflow: hidden;  
+    z-index: 2
+}
+#secImg{
+    position: absolute;
+    cursor: pointer;  
+    transition: all 0.6s;  
+    z-index: 100;
+}
+/* #secImg:hover{
+    transform: scale(1.2);  
+} */
+
+/* 第二图背景 */
+#secBg{
+    position: absolute;
+    display: block;
+    top: 250%;
+    right: 40%;
+    background-color : #E8E8E8;    
+    width: 55%;
+    height: 70%;
+    opacity: 0.05;
+}
+
+/* 按钮2 */
+#secBox{
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: 7.5%;
+    border: 1px solid #595959;
+    top: 318%;
+    left: 75.5%;
+    z-index: 102;
+    text-align: center;  
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#secMore{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color:green;
+    transition-duration: 1.5s;
+    transform: width;
+    /* border: 1px solid #595959; */
+    z-index: 101;
+}
+
+/* #More{
+    top: 10%;
+} */
+
+/* 第三图 */
+#tirImgDiv{
+    position: absolute;
+    top: 355%;
+    left: 43.5%;
+    width: 55%;
+    height: 70%;
+    /* border: #000 solid 1px;   */
+    margin: 50px auto;  
+    overflow: hidden;  
+    z-index: 2
+}
+#tirImg{
+    position: absolute;
+    cursor: pointer;  
+    transition: all 0.6s;  
+    z-index: 100;
+}
+#tirImg:hover{
+    transform: scale(1.2);  
+}
+
+/* 第3图背景 */
+#tirBg{
+    position: absolute;
+    display: block;
+    top: 350%;
+    left: 40%;
+    background-color : lightgrey;  
+    width: 55%;
+    height: 70%;
+}
+
+/* 按钮3 */
+#tirBox{
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: 7.5%;
+    border: 1px solid #595959;
+    top: 418%;
+    right: 75.5%;
+    z-index: 102;
+}
+
+#tirMore{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color:green;
+    transition-duration: 1.5s;
+    transform: width;
+    /* border: 1px solid #595959; */
+    z-index: 101;
+}
+
+/* #More2{
+    top: 10%;
+} */
+
+/* 阅览室文字 */
+#Read{
+    color:grey;
+    font-size: 21px;
+}
+#tirp1{
+    position: absolute;
+    top: 360%;
+    left: 14%;
+}
+#tirp2{
+    position: absolute;
+    top: 368%;
+    left: 10.2%;
+}
+#tirp3{
+    position: absolute;
+    top: 376%;
+    left: 10.2%;
+}
+#tirp4{
+    position: absolute;
+    top: 384%;
+    left: 11.8%;
+}
+
+/* 关于我们文字 */
+#aboutMe{
+    color:grey;
+    font-size: 21px;
+}
+#forp1{
+    position: absolute;
+    top: 475%;
+    right: 19.5%;
+}
+#forp2{
+    position: absolute;
+    top: 483%;
+    right: 9.2%;
+}
+#forp3{
+    position: absolute;
+    top: 491%;
+    right: 12%;
+}
+#forp4{
+    position: absolute;
+    top: 499%;
+    right: 11%;
+}
+
+/* 第四图背景 */
+#forBg{
+    position: absolute;
+    display: block;
+    top: 460%;
+    right: 40%;
+    background-color : #11643F;  
+    width: 55%;
+    height: 70%;
+}
+
+/* 第四图*/
+#forImgDiv{
+    position: absolute;
+    top: 460%;
+    right: 43.5%;
+    width: 55%;
+    height: 70%;
+    /* border: #000 solid 1px;   */
+    margin: 50px auto;  
+    overflow: hidden;  
+    z-index: 2
+}
+#forImg{
+    position: absolute;
+    cursor: pointer;  
+    transition: all 0.6s;  
+    z-index: 100;
+}
+/* 按钮4 */
+#forBox{
+    position: absolute;
+    display: block;
+    width: 15%;
+    height: 7.5%;
+    border: 1px solid #595959;
+    top: 528%;
+    left: 75.5%;
+    z-index: 102;
+}
+
+#forMore{
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background-color:green;
+    transition-duration: 1.5s;
+    transform: width;
+    /* border: 1px solid #595959; */
+    z-index: 101;
+}
+/* 
+#More3{
+    top: 10%;
+} */
+
+/* 底栏 */
+
+#lowCo{
+    position: absolute;
+    top: 550%;
+    width:100%;
+    height: 40%;
+    background-color: #595959;
+}
+
+#QR{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 8%;
+    float: left;
+}
+#lowCo ul{
+    position: absolute;
+    top: 3%;
+    left: 40%;
+}
+
+#lowCo ul li{
+    position: relative;
+    margin: 0 0px;
+    float: left;
+    display: block;
+    width: 300px;
+    height: 70px
+}
+#lowCo ul li a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height:400%;
+}
+
+#lxfs{
+    position: absolute;
+    top: 18%;
+    left: 60%;
+    color: white;
+    font-size: 14px;
+}
+
+#fwzn{
+    position: absolute;
+    top: 18%;
+    left: 35%;
+    color: white;
+    font-size: 14px;
+}
+

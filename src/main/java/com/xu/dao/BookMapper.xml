@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.xu.dao.BookMapper">
+    <insert id="addBook" parameterType="Books">
+            insert into ssmbuild.books (bookName, bookCounts, detail)
+            values (#{bookName},#{bookCounts},#{detail});
+    </insert>
+    <delete id="deleteBookById" parameterType="java.lang.Integer">
+        delete
+        from ssmbuild.books
+        where bookID=#{bookID};
+    </delete>
+
+    <update id="updateBook" parameterType="Books">
+        update ssmbuild.books
+        set bookName =#{bookName},bookCounts=#{bookCounts},detail=#{detail}
+        where bookID=#{bookID};
+    </update>
+    <select id="queryBookById"  resultType="com.xu.pojo.Books" parameterType="java.lang.Integer">
+        select *
+        from ssmbuild.books
+        where bookID=#{bookID};
+    </select>
+    
+    <select id="queryAllBook" resultType="com.xu.pojo.Books">
+        select *
+        from ssmbuild.books;
+    </select>
+    <select id="queryBookByName" resultType="com.xu.pojo.Books">
+        select * from ssmbuild.books where bookName=#{bookName}
+    </select>
+<!--    <insert id="addUser" parameterType="com.xu.pojo.User">-->
+<!--        insert into ssmbuild.user(username, password) values (#{username},#{password});-->
+<!--    </insert>-->
+<!--    <select id="UserByName" resultType="com.xu.pojo.User">-->
+<!--        select * from  ssmbuild.user where username=#{username};-->
+<!--    </select>-->
+</mapper>
